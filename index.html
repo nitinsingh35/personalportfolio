@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nitin Singh | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">Nitin's Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#internships">Internships</a></li>
+        <li><a href="#research">Research & Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search..." aria-label="Search" />
+        <button class="search-btn" aria-label="Search">Search</button>
+        <button id="theme-toggle-btn" aria-label="Toggle Theme" style="margin-left:0.7rem; background:none; border:none; cursor:pointer; font-size:1.5rem; display:flex; align-items:center; justify-content:center;">
+          <span id="theme-icon" title="Change Theme" style="font-size:1.6rem;">🌙</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content hero-center">
+      <div class="hero-left">
+        <img src="images/IMG_20231101_222223.png" alt="Nitin Singh" class="profile-pic" />
+      </div>
+      <div class="hero-intro">
+        <p class="profile-intro"><strong>Nitin Kumar Singh</strong><br>Full Stack Web Developer </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about-center">
+    <div class="about-icons">
+      <a href="https://www.linkedin.com/in/nitin-kumar-singh-/" target="_blank" aria-label="LinkedIn" class="icon-link">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="6" fill="#0077B5"/>
+          <path d="M10.666 13.333h2.667v8h-2.667v-8zm1.333-4a1.333 1.333 0 110 2.667 1.333 1.333 0 010-2.667zm3.334 4h2.56v1.093h.037c.356-.675 1.226-1.387 2.523-1.387 2.7 0 3.2 1.776 3.2 4.084v4.21h-2.667v-3.733c0-.89-.016-2.034-1.24-2.034-1.24 0-1.427.968-1.427 1.967v3.8h-2.667v-8z" fill="#fff"/>
+        </svg>
+      </a>
+      <a href="https://github.com/nitin62043" target="_blank" aria-label="GitHub" class="icon-link">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="6" fill="#181717"/>
+          <path d="M16 7.333c-4.6 0-8.333 3.733-8.333 8.333 0 3.683 2.39 6.8 5.7 7.9.417.075.567-.183.567-.4 0-.2-.008-.867-.012-1.575-2.317.5-2.806-.983-2.806-.983-.379-.967-.925-1.225-.925-1.225-.758-.517.058-.508.058-.508.838.058 1.279.858 1.279.858.746 1.279 1.958.908 2.433.692.075-.542.292-.908.533-1.117-1.85-.208-3.792-.925-3.792-4.117 0-.908.325-1.65.858-2.233-.087-.208-.371-1.042.083-2.175 0 0 .7-.225 2.3.85a7.98 7.98 0 012.1-.283c.713.003 1.433.097 2.1.283 1.6-1.075 2.3-.85 2.3-.85.454 1.133.17 1.967.083 2.175.533.583.858 1.325.858 2.233 0 3.2-1.946 3.908-3.8 4.117.3.258.567.767.567 1.55 0 1.117-.012 2.017-.012 2.292 0 .221.15.479.571.398 3.308-1.104 5.696-4.221 5.696-7.9 0-4.6-3.733-8.333-8.333-8.333z" fill="#fff"/>
+        </svg>
+      </a>
+    </div>
+    <h2><strong>About Me</strong></h2>
+    <p>I'm a passionate B.Tech CSE student from Jharkhand, <br>building modern web applications and learning every day. My goal is to create meaningful software and someday run my own company.</br></p>
+  </section>
+
+  <section id="resume" class="section resume-section">
+    <h2>📄 Resume</h2>
+    <div class="resume-container">
+      <div class="resume-upload-area">
+        <label for="resume-upload" class="resume-upload-label">
+          <span class="upload-icon">📤</span>
+          <span class="upload-text">Click to Upload Resume (PDF)</span>
+          <input type="file" id="resume-upload" accept=".pdf" class="resume-upload-input" />
+        </label>
+      </div>
+      <div id="resume-display" class="resume-display" style="display: none;">
+        <button id="resume-clear-btn" class="resume-clear-btn">✖ Remove Resume</button>
+        <iframe id="resume-iframe" class="resume-iframe" title="Resume"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="education-row">
+      <div class="education-entry">
+        <h2><strong>Secondary</strong></h2>
+        <h3>
+          <a href="https://g.co/kgs/7WmT4cZ" target="_blank" class="school-link">Swami Vivekanand School</a>
+        </h3>
+        <p>Passed in 2020</p>
+        <button class="view-more-btn" onclick="document.getElementById('school-details-10').classList.toggle('show');">View More</button>
+        <div id="school-details-10" class="school-details">
+          <p><strong>Class 10th Details</strong></p>
+          <p><strong>Subjects: </strong>Hindi, English, Math, Science, Social Science</p>
+          <p><strong>Scored: </strong>84.4 % in Board Exams</p>
+        </div>
+      </div>
+      <div class="education-entry">
+        <h2><strong>Higher Secondary</strong></h2>
+        <h3>
+          <a href="https://www.districtsoemedininagarpalamu.in/" target="_blank" class="school-link">Govt Inter College, Daltonganj</a>
+        </h3>
+        <p>2020-2022</p>
+        <button class="view-more-btn" onclick="document.getElementById('school-details-12').classList.toggle('show');">View More</button>
+        <div id="school-details-12" class="school-details">
+          <p><strong>Class 12th Details</strong></p>
+          <p><strong>Subjects: </strong>Physics, Chemistry, Mathematics, English, Computer Science</p>
+          <p><strong>Scored: </strong>74.4 % in Board Exams</p>
+        </div>
+      </div>
+      <div class="education-entry">
+        <h2><strong>B.Tech CSE</strong></h2>
+        <h3>
+          <a href="https://www.lpu.in/" target="_blank" class="school-link">Lovely Professional University, Punjab</a>
+        </h3>
+        <p>2023-Present</p>
+        <button class="view-more-btn" onclick="document.getElementById('grad-details').classList.toggle('show');">View More</button>
+        <div id="grad-details" class="school-details">
+          <p><strong>Course:</strong> Bachelor of Technology (B.Tech) in Computer Science & Engineering</p>
+          <p><strong>Subjects:</strong> Data Structures, Algorithms, Web Development, DBMS, Operating Systems, and more</p>
+          <p><strong>Status:</strong> Pursuing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-row">
+      <div class="skills-box">
+        <h3>🖥️ Programming Languages</h3>
+        <ul class="languages-list column-list">
+          <li style="background:#4b8bbe; color:#fff;">Python</li>
+          <li style="background:#e76f00; color:#fff;">Java</li>
+          <li style="background:#00599c; color:#fff;">C</li>
+          <li style="background:#f34b7d; color:#fff;">C++</li>
+        </ul>
+      </div>
+      <div class="skills-box">
+        <h3><span class="web-icon">🌐</span> Web Development</h3>
+        <ul class="languages-list column-list">
+          <li style="background:#e44d26; color:#fff;">HTML</li>
+          <li style="background:#2965f1; color:#fff;">CSS</li>
+          <li style="background:#f7c873; color:#222;">JavaScript</li>
+          <li style="background:#7377ad; color:#fff;">PHP</li>
+        </ul>
+      </div>
+      <div class="skills-box">
+        <h3><span class="db-icon">🗄️</span> Database</h3>
+        <ul class="languages-list column-list">
+          <li style="background:#00758f; color:#fff;">MySQL</li>
+          <li style="background:#13aa52; color:#fff;">MongoDB</li>
+        </ul>
+      </div>
+    </div>
+    <div class="skills-row" style="margin-top:1.5rem; justify-content:center;">
+      <div class="skills-box">
+        <h3><span class="tools-icon">🛠️</span> Tools & Platforms</h3>
+        <ul class="languages-list column-list">
+          <li style="background:#217346; color:#fff;">MS Excel</li>
+          <li style="background:#0b57d0; color:#fff;">Google Sheets</li>
+          <li style="background:#f34f29; color:#fff;">Git</li>
+          <li style="background:#24292e; color:#fff;">GitHub</li>
+          <li style="background:#0078d7; color:#fff;">VS Code</li>
+          <li style="background:#10a37f; color:#fff;">ChatGPT</li>
+          <li style="background:#f9ab00; color:#222;">Google Colab</li>
+        </ul>
+      </div>
+      <div class="skills-box">
+        <h3><span class="softskills-icon">🤝</span> Soft Skills</h3>
+        <ul class="languages-list column-list">
+          <li style="background:#27ae60; color:#fff;">Problem-Solving</li>
+          <li style="background:#2980b9; color:#fff;">Time Management</li>
+          <li style="background:#8e44ad; color:#fff;">Teamwork</li>
+          <li style="background:#f39c12; color:#fff;">Communication</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>EcoRecycle</h3>
+        <p>Helps users find e-waste centers & learn about safe recycling.</p>
+        <a href="https://github.com/nitin62043/EcoRecycle-" target="_blank" class="project-link" style="display:inline-block;margin-top:0.5rem;color:#0077b5;text-decoration:underline;font-weight:500;">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Virtual Memory Optimization Challenges</h3>
+        <p> A series of challenges focused on optimizing virtual memory usage in applications.</p>
+        <a href="https://github.com/nitin62043/Virtual-Memory-Optimization-Challenge" target="_blank" class="project-link" style="display:inline-block;margin-top:0.5rem;color:#0077b5;text-decoration:underline;font-weight:500;">View on GitHub</a>
+      </div>
+    </div>
+    <div style="height: 1rem;"></div>
+    <div class="projects-grid">
+      <div class="project-card" style="min-width:150px;max-width:665px;flex:1 1 220px;">
+        <h3>ChatBot For App Suggestion</h3>
+        <p>A chatbot that suggests applications based on user preferences and requirements.</p>
+        <a href="https://github.com/nitin62043/chatbot-for-app-suggestion" target="_blank" class="project-link" style="display:inline-block;margin-top:0.5rem;color:#0077b5;text-decoration:underline;font-weight:500;">View on GitHub</a>
+      </div>
+      <div class="project-card" style="min-width:150px;max-width:665px;flex:1 1 220px;">
+        <h3>Kharidari E-Commerce Website</h3>
+        <p>An e-commerce platform for online shopping with product listing, cart management, and checkout functionality.</p>
+        <a href="https://github.com/nitinsingh35/Kharidari" target="_blank" class="project-link" style="display:inline-block;margin-top:0.5rem;color:#0077b5;text-decoration:underline;font-weight:500;">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+  <section id="certificates" class="certificates-section">
+    <div class="certificates-container">
+      <h2><span class="certificate-icon">🏆</span>Certifications</h2>
+      
+      <div class="certificates-intro">
+        <p>I have completed various certifications and training programs to enhance my technical skills and knowledge across multiple domains.</p>
+        <button id="open-resume-builder" class="resume-builder-btn">
+          <span>📋 Build Your Custom Resume</span>
+        </button>
+      </div>
+
+      <div class="certificates-grid">
+        <div class="cert-card cert-card-yellow">
+          <div class="cert-icon">📜</div>
+          <h3>Programming Languages</h3>
+          <p>Java, C, C++, DSA - Neo Colab Certificates</p>
+          <p class="cert-description">Successfully completed certification courses in Java, C, C++, and Data Structures & Algorithms from Neo Colab.</p>
+          <button class="cert-toggle-btn" onclick="document.getElementById('cert-options').style.display = document.getElementById('cert-options').style.display === 'flex' ? 'none' : 'flex'">
+            View Certificates
+          </button>
+          <div id="cert-options" class="cert-details-grid">
+            <a href="https://www.linkedin.com/posts/nitin-kumar-singh-_javaprogramming-certification-lamneo-activity-7333001653064810497-gi_V?utm_source=share&utm_medium=member_desktop" target="_blank" class="cert-detail-link">Java</a>
+            <a href="https://www.linkedin.com/in/nitin-kumar-singh-/recent-activity/all/" target="_blank" class="cert-detail-link">C</a>
+            <a href="https://www.linkedin.com/posts/nitin-kumar-singh-_iamneo-certificationachieved-techskills-activity-7336651176119083008-WM3h" target="_blank" class="cert-detail-link">C++</a>
+            <a href="https://www.linkedin.com/posts/nitin-kumar-singh-_datastructures-algorithms-neocolab-activity-7336649497965416449-Ie_b" target="_blank" class="cert-detail-link">DSA</a>
+          </div>
+        </div>
+
+        <div class="cert-card cert-card-blue">
+          <div class="cert-icon">🌐</div>
+          <h3>Networking & Systems</h3>
+          <p>Network Communication & Hardware Fundamentals</p>
+          <p class="cert-description">Certified in Fundamentals Of Network Communication, covering bits and bytes, and introduction to hardware and software.</p>
+          <button class="cert-toggle-btn" onclick="document.getElementById('network-cert-options').style.display = document.getElementById('network-cert-options').style.display === 'flex' ? 'none' : 'flex'">
+            View Certificates
+          </button>
+          <div id="network-cert-options" class="cert-details-grid">
+            <a href="https://www.linkedin.com/posts/nitin-kumar-singh-_computerorganization-hardwaredesign-ibm-activity-7247631044160430081--swg" target="_blank" class="cert-detail-link">Hardware & Software</a>
+            <a href="https://www.linkedin.com/posts/nitin-kumar-singh-_completed-the-bits-and-bytes-of-computer-activity-7247632622384807936-eUzP" target="_blank" class="cert-detail-link">Bits & Bytes</a>
+            <a href="https://www.linkedin.com/posts/nitin-kumar-singh-_networkcommunication-continuous-digitalskills-activity-7250574951080943616-Wsu8" target="_blank" class="cert-detail-link">Network Comm</a>
+          </div>
+        </div>
+
+        <div class="cert-card cert-card-green">
+          <div class="cert-icon">💻</div>
+          <h3>Web Development</h3>
+          <p>Full Stack Web Development Certification</p>
+          <p class="cert-description">Certified in Full Stack Web Development, covering frontend and backend technologies, modern frameworks, and deployment.</p>
+          <button class="cert-toggle-btn" onclick="document.getElementById('fullstack-cert-options').style.display = document.getElementById('fullstack-cert-options').style.display === 'flex' ? 'none' : 'flex'">
+            View Certificates
+          </button>
+          <div id="fullstack-cert-options" class="cert-details-grid">
+            <a href="https://www.linkedin.com/posts/nitin-kumar-singh-_html-certification-link" target="_blank" class="cert-detail-link">HTML</a>
+            <a href="https://www.linkedin.com/posts/nitin-kumar-singh-_css-certification-link" target="_blank" class="cert-detail-link">CSS</a>
+            <a href="https://www.linkedin.com/posts/nitin-kumar-singh-_javascript-certification-link" target="_blank" class="cert-detail-link">JavaScript</a>
+            <a href="https://www.linkedin.com/posts/nitin-kumar-singh-_freecodecamp-lpuuniversity-webdesign-activity-7124024350428516352-9VXd" target="_blank" class="cert-detail-link">Responsive Design</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section achievements-section">
+    <div class="achievements-container">
+      <h2><span class="achievement-icon">⭐</span> Achievements</h2>
+      
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-badge">⭐</div>
+          <h3>Java 3-Star Rating</h3>
+          <p class="achievement-date">Date: Jan'26</p>
+          <p class="achievement-description">Achieved 3 star rating in Java on HackerRank, demonstrating strong problem-solving and coding skills.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-badge">🏆</div>
+          <h3>A Grade - Summer Training</h3>
+          <p class="achievement-date">Date: Jul'25</p>
+          <p class="achievement-description">Got A rewards in Summer Training, showcasing excellent performance and commitment to continuous learning.</p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-badge">🥈</div>
+          <h3>University Competition - 2nd Place</h3>
+          <p class="achievement-date">Date: Jun'24</p>
+          <p class="achievement-description">Led a team of five in a university competition and secured 2nd place, demonstrating strong leadership and teamwork.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships Section -->
+  <section id="internships" class="section internships-section">
+    <div class="internships-container">
+      <h2><span class="internship-icon">💼</span> Training</h2>
+      
+      <div class="internships-grid">
+        <div class="internship-card">
+          <div class="internship-header">
+            <h3 class="internship-position">Fundamental of Data Structures</h3>
+            <p class="internship-company">Certificate Program</p>
+          </div>
+          <p class="internship-duration"><strong>Duration:</strong> Jun'25 - Jul'25</p>
+          <p class="internship-description">Completed a summer training on fundamentals of Data Structures, mastering essential data structure concepts and implementation.</p>
+          <ul class="internship-highlights">
+            <li>Learned basic data structures: arrays, linked lists, stacks, queues, trees, and graphs</li>
+            <li>Practiced coding problems and problem-solving techniques</li>
+            <li>Earned an A grade in the program</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hackathon Section -->
+  <section id="hackathon" class="section hackathon-section">
+    <h2><span class="hackathon-icon">🚀</span> Hackathon Experience</h2>
+    <div class="hackathon-grid">
+      <div class="hackathon-card">
+        <div class="hackathon-badge">👾</div>
+        <h3>Code-A-Haunt</h3>
+        <p class="hackathon-desc">Participated in a 24-hour hackathon organized by CodingBlocks, showcasing problem-solving skills and collaborative development.</p>
+        <button class="cert-toggle-btn" onclick="document.getElementById('hackathon-cert-options').style.display = document.getElementById('hackathon-cert-options').style.display === 'flex' ? 'none' : 'flex'">
+          View Certificate
+        </button>
+        <div id="hackathon-cert-options" class="cert-details-grid">
+          <a href="#" target="_blank" class="cert-detail-link">Code-A-Haunt</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research and Publication Section -->
+  <section id="research" class="section research-section">
+    <div class="research-container">
+      <h2><span class="research-icon">📚</span> Research & Publications</h2>
+      
+      <div class="research-grid">
+        <div class="research-card">
+          <div class="research-header">
+            <h3 class="research-title">Academic & Personal Projects</h3>
+            <p class="research-authors"><strong>Focus:</strong> Full Stack Development</p>
+          </div>
+          <p class="research-journal"><strong>Type:</strong> Project-Based Learning</p>
+          <p class="research-description">Worked on academic and personal projects demonstrating practical implementation of full stack development concepts. Explored problem-solving approaches, system design, and efficient coding practices through project-based learning.</p>
+          <div class="research-details">
+            <ul class="research-highlights">
+              <li>Explored problem-solving approaches and system design principles</li>
+              <li>Implemented efficient coding practices through practical projects</li>
+              <li>Continuously researching modern technologies and frameworks</li>
+              <li>Enhancing development skills through hands-on implementation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div id="contact-success" style="display:none; color:#27ae60; font-size:1.15rem; margin-top:1.2rem; font-weight:600;">Thank you! Your message has been sent.</div>
+  </section>
+
+  <!-- Resume Download Modal -->
+  <div id="resume-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Download Your Custom Resume</h2>
+        <button class="modal-close" onclick="document.getElementById('resume-modal').style.display='none';">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Select the skills you want to include in your resume:</p>
+        <div id="skills-container" class="skills-selection-container">
+          <!-- Skills will be dynamically loaded here -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="download-pdf-btn" class="download-pdf-btn">Generate & Download PDF</button>
+        <button class="modal-cancel-btn" onclick="document.getElementById('resume-modal').style.display='none';">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Nitin Singh. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
